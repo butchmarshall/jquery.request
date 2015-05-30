@@ -16,7 +16,7 @@
 					data = null;
 				}
 
-				// Some data (file uploads) can't be submitted using xhrRequest - will have to use FormData otherwise
+				// Some data (file uploads) can't be submitted using xhrRequest - will have to use FormData
 				if (data) {
 					args.data = data;
 				}
