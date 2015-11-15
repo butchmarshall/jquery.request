@@ -9,7 +9,7 @@
 	jQuery.Request = function(args) {
 		if (jQuery.support.cors && args.crossDomain !== false) {
 			var data, form;
-			if (args.data) {
+			if (args.data && args.processData !== false) {
 				try {
 					data = jQuery.dataToJson(args.data);
 				} catch(e) {
