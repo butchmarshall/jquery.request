@@ -1,12 +1,12 @@
 ;(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define(['jquery'], factory);
+    define(['jquery', 'jquery.dataToJson', 'jquery.dataToInputs'], factory);
   } else if (typeof exports === 'object') {
-    module.exports = factory(require('jquery'));
+    module.exports = factory(require('jquery'), require('jquery.dataToJson'), require('jquery.dataToInputs'));
   } else {
-    root.jQuery.Request = factory(root.jQuery);
+    root.jQuery.Request = factory(root.jQuery, root.jQuery.dataToJson, root.jQuery.dataToInputs);
   }
-}(this, function(jQuery) {
+}(this, function(jQuery, dataToJson, dataToInputs) {
 (function (jQuery) {
     'use strict';
 

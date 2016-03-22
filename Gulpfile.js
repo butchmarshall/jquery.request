@@ -26,6 +26,20 @@ gulp.task('minify', function() {
 					cjs: 'jquery',
 					amd: 'jquery',
 					global: 'jQuery'
+				},
+				{
+					name: 'jquery-data-to-json',
+					cjs: 'jquery.dataToJson',
+					amd: 'jquery.dataToJson',
+					param: 'dataToJson',
+					global: 'jQuery.dataToJson'
+				},
+				{
+					name: 'jquery-data-to-inputs',
+					cjs: 'jquery.dataToInputs',
+					amd: 'jquery.dataToInputs',
+					param: 'dataToInputs',
+					global: 'jQuery.dataToInputs'
 				}
 			]
 		},
