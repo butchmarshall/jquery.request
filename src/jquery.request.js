@@ -1,9 +1,4 @@
-(function (factory) {
-    'use strict';
-
-	factory(window.jQuery);
-
-}(function (jQuery) {
+(function (jQuery) {
     'use strict';
 
 	jQuery.Request = function(args) {
@@ -136,4 +131,5 @@
 		return parseUri;
 	})();
 
-}));
+	return jQuery.Request;
+})(jQuery);
